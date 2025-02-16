@@ -2,7 +2,7 @@
 
 using std::vector;
 
-class Solution {
+class LeetCode {
    public:
     int removeDuplicates(vector<int>& nums) {
         int k = 1;
