@@ -1,9 +1,19 @@
+#include <iostream>
 #include <vector>
 
-using std::vector;
+using namespace std;
 
 class LeetCode {
    public:
+    // constructor
+    LeetCode() {
+        cout << "LeetCode class created" << endl;
+    }
+
+    ~LeetCode() {
+        cout << "LeetCode class destroyed" << endl;
+    }
+
     int removeDuplicates(vector<int>& nums) {
         int k = 1;
 

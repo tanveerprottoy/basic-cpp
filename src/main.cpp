@@ -2,6 +2,8 @@
 
 #include "problems/leetcode.cpp"
 
+using namespace std;
+
 int main() {
     int nums[10] = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
 
@@ -9,7 +11,19 @@ int main() {
 
     int size = sizeof(nums) / sizeof(nums[0]);
 
-    std::printf("%d", removeDuplicates(ptr, size));
+    printf("removeDuplicates: %d", removeDuplicates(ptr, size));
 
-    return 0;
+    // vector init
+    vector<int> vector = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
+
+    // init LeetCode class
+    LeetCode* leetCode = new LeetCode();
+
+    printf("leetCode->removeDuplicates: %d", leetCode->removeDuplicates(vector));
+
+    // delete LeetCode class
+    // this free the memory allocated for the class
+    delete leetCode;
+
+    return EXIT_SUCCESS;
 }
