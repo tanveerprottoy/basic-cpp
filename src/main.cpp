@@ -11,7 +11,7 @@ int main() {
 
     int size = sizeof(nums) / sizeof(nums[0]);
 
-    printf("removeDuplicates: %d", removeDuplicates(ptr, size));
+    cout << "removeDuplicates: " << removeDuplicates(ptr, size) << endl;
 
     // vector init
     vector<int> vector = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
@@ -19,11 +19,13 @@ int main() {
     // init LeetCode class
     LeetCode* leetCode = new LeetCode();
 
-    printf("leetCode->removeDuplicates: %d", leetCode->removeDuplicates(vector));
+    cout << "leetCode->removeDuplicates: " << leetCode->removeDuplicates(vector) << endl;
 
     // delete LeetCode class
     // this free the memory allocated for the class
     delete leetCode;
+
+    cout << "TAFHEEM" << endl;
 
     return EXIT_SUCCESS;
 }

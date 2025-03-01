@@ -1,3 +1,3 @@
 run:
-	gcc ./src/main.cpp -o ./bin/app
+	g++ ./src/main.cpp -o ./bin/app
 	./bin/app
